@@ -1,0 +1,12 @@
+#catalogo_content {
+
+    width: 100%;
+    height: auto;
+    padding: 31px 122px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(395px, 1fr));
+    
+    gap: 16px;
+
+}
+
