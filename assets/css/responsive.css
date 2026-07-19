@@ -48,7 +48,7 @@
     }
 
     #main_content {
-        background: url('/assets/images/hero-banner-mobile.jpg');
+        background: url('assets/images/hero-banner-mobile.jpg');
         background-size: cover;
         background-position: center;
     }
