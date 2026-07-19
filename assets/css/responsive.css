@@ -37,14 +37,14 @@
 }
 
 @media (max-width: 480px) {
-    /*  NOTE: Se o fix do menu tiver corrigo, apaga.
-    #header_main,
-    #hero_main,
-    #catalogo_content */
 
     #main_content,
     #footer_main {
         padding: 20px;
+    }
+
+    #catalogo_content {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     #main_content {
