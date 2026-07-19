@@ -2,8 +2,8 @@
     #header_main {
         padding: 20px;
     }
-    
-    #hero_main{
+
+    #hero_main {
         padding: 0px;
     }
 
@@ -37,18 +37,18 @@
 }
 
 @media (max-width: 480px) {
-/*  NOTE: Se o fix do menu tiver corrigo, apaga.
+    /*  NOTE: Se o fix do menu tiver corrigo, apaga.
     #header_main,
     #hero_main,
     #catalogo_content */
-    
+
     #main_content,
     #footer_main {
         padding: 20px;
     }
 
     #main_content {
-        background: url('assets/images/hero-banner-mobile.jpg');
+        background: url('../images/hero-banner-mobile.jpg');
         background-size: cover;
         background-position: center;
     }
