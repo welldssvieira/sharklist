@@ -1,16 +1,12 @@
-@media (max-width: 1200px) {
-
-    .hero_content {
-        width: 80%;
+@media (max-width: 780px) {
+    #header_main {
+        padding: 20px;
+    }
+    
+    #hero_main{
+        padding: 0px;
     }
 
-
-}
-
-@media (max-width: 780px) {
-
-    #header_main,
-    #hero_main,
     #catalogo_content,
     #footer_main {
         padding: 20px;
@@ -45,7 +41,7 @@
     #header_main,
     #hero_main,
     #catalogo_content */
-
+    
     #main_content,
     #footer_main {
         padding: 20px;
@@ -53,10 +49,6 @@
 
     #main_content {
         background: url('/assets/images/hero-banner-mobile.png');
-    }
-
-    .hero_content {
-        width: 100%;
     }
 
     .hero_title {
