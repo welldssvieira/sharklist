@@ -1,8 +1,12 @@
 @media (max-width: 780px) {
 
 
+    #header_main {
+        padding: 20px;
+    }
+
     #hero_main {
-        padding: 0px;
+        padding: 20px;
     }
 
     #catalogo_content,

@@ -20,7 +20,7 @@
     padding: 31px 122px;
 }
 
-#hero_main::before {
+#main_content::before {
 
     content: '';
     position: absolute;
