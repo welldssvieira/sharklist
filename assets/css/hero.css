@@ -1,5 +1,5 @@
 #test {
-    color: red;
+    color: white;
 }
 
 #main_content {
@@ -15,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    
 }
 
 #hero_main {
@@ -22,6 +23,8 @@
     width: 100%;
     height: 80vh;
     padding: 31px 122px;
+    position: relative;
+    top: 30px;
 }
 
 #main_content::before {
