@@ -1,7 +1,5 @@
 @media (max-width: 780px) {
-    #header_main {
-        padding: 20px;
-    }
+
 
     #hero_main {
         padding: 0px;
@@ -37,8 +35,14 @@
 }
 
 @media (max-width: 480px) {
+    #header_main {
+        padding: 20px;
+    }
 
-    #main_content,
+    #hero_main {
+        padding: 20px;
+    }
+
     #footer_main {
         padding: 20px;
     }
