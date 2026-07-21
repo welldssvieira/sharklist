@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/card.css">
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -11,14 +12,14 @@
     <link rel="stylesheet" href="assets/css/body.css">
     <link rel="stylesheet" href="assets/css/hero.css">
     <link rel="stylesheet" href="assets/css/catalogo.css">
-    <link rel="stylesheet" href="assets/css/card.css">
+
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Shark List</title>
 </head>
 
 <body>
-    
+
 
     <main id="main_content">
         <header id="header_main">
@@ -40,19 +41,17 @@
         <section id="hero_main">
             <div class="hero_content">
                 <span data-aos="fade-up" data-aos-duration="2000" class="hero_observation">PROJETO INDEPENDENTE</span>
-                <h1 data-aos="fade-up" data-aos-duration="2000" class="hero_title">O maior catálogo <br> de tubarões do mundo.</h1>
+                <h1 data-aos="fade-up" data-aos-duration="2000" class="hero_title">O maior catálogo <br> de tubarões do
+                    mundo.</h1>
                 <hr data-aos="fade-up" data-aos-duration="2000" class="hero_divider">
-                <p data-aos="fade-up" data-aos-duration="2000" class="hero_description">Explore mais de 530 espécies de tubarões catalogadas <br> com base em fontes
+                <p data-aos="fade-up" data-aos-duration="2000" class="hero_description">Explore mais de 530 espécies de
+                    tubarões catalogadas <br> com base em fontes
                     científicas, fotografias e dados <br> sobre conservação dos oceanos.</p>
             </div>
         </section>
 
-        <dotlottie-wc
-  src="https://lottie.host/31cf549e-b153-4277-9eb0-b37e663154bb/MlNU8ozpiy.lottie" speed="0.5"
-  style="width: 100px;height: 100px;"
-  autoplay
-  loop
-></dotlottie-wc>
+        <dotlottie-wc class="drop_mouse" src="https://lottie.host/31cf549e-b153-4277-9eb0-b37e663154bb/MlNU8ozpiy.lottie" speed="0.5"
+            style="width: 80px;height: 80px;" autoplay loop></dotlottie-wc>
     </main>
 
     <section id="catalogo_content">
@@ -72,7 +71,8 @@
                     <img src="assets/icones/icone-instagram2.svg" alt="Icone do Instagram">
                 </a>
 
-                <a href="https://github.com/welldssvieira/sharklist" target="_blank" class="rede" title="Clique para acessar o Github do SharkList">
+                <a href="https://github.com/welldssvieira/sharklist" target="_blank" class="rede"
+                    title="Clique para acessar o Github do SharkList">
                     <img src="assets/icones/icone-github.svg" alt="Icone do Github">
                 </a>
             </div>
@@ -97,17 +97,16 @@
     </footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script
-  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
-  type="module"
-></script>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script>
 
 <script type="module" src="assets/js/getEspecies.js"></script>
 
 <script>
-      AOS.init();
+    AOS.init({
+        once: true, // apenas uma vez
+        mirror: false // não repete ao voltar subindo
+    });
 
-      
 
     const header = document.getElementById("header_main");
 

@@ -10,3 +10,9 @@ body {
     background-color: #00133E;
     font-family: 'Inter', sans-serif;
 }
+
+/*[NOTE]: Faz ajustes no elemento de drop mouse porque sem ele, começa a cortar na tela mobile. Evite remover.*/
+.drop_mouse {
+    position: relative;
+    top: -30px;
+}
