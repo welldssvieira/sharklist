@@ -59,6 +59,8 @@
         background: url('../images/hero-banner-mobile.jpg');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
 
     .hero_title {
