@@ -2,9 +2,10 @@ import { especies } from "../../../data/species.js";
 
 function getEspecies() {
     const containerCatalogo = document.getElementById("catalogo_content");
+if (!containerCatalogo) return;
 
     const cardsHTML = especies.map(especie => `
-        <a data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" target="_self" class="catalogo_card">
+        <a href="pages/species/carcharodon_carcharias.html" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" target="_self" class="catalogo_card">
             <header class="card_header">
                 <div class="card_header_title">
                     <h3>${especie.name}</h3>

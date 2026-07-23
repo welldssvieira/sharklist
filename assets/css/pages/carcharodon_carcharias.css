@@ -1,0 +1,714 @@
+#main_content_specie {
+
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../../images/sharks/carcharodon_carcharias/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+#main_content_specie::before {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 19, 62, 1));
+    z-index: 0;
+}
+
+/* Header da espécie */
+
+#header_specie {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 31px 122px;
+    gap: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.specie_order_family {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.specie_order_family p {
+    font-size: 0.75rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.point {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specie_name {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.specie_name h1 {
+    font-size: 3.37rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 3.37rem;
+    color: #fff;
+}
+
+.specie_name h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.badge_status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 4px;
+}
+
+.badge_status span {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FF7700;
+    background-color: rgba(255, 119, 0, 0.2);
+    padding: 7px 11px;
+    border: 1px solid #FF7700;
+    border-radius: 50px;
+}
+
+.badge_status p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Dados da espécie */
+
+#specie_data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 122px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #00174A;
+    background-color: #00123C;
+}
+
+.data_info {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 155px;
+    border: 1px solid #00174A;
+    padding: 16px;
+    gap: 15px;
+}
+
+.data_info p {
+    font-size: 0.75rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.data_info h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+/* Visão geral */
+#vision_specie {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 150px 122px;
+    position: relative;
+    z-index: 1;
+}
+
+.specie_description {
+    width: 40%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.specie_description h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.specie_description p {
+    font-size: 1.30rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.specie_distribution {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.specie_distribution h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.specie_distribution img {
+    width: 100%;
+    height: auto;
+}
+
+.specie_dustribution_status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.specie_dustribution_status .point {
+    background-color: cornflowerblue;
+
+}
+
+.specie_dustribution_status p {
+    font-size: 0.80rem;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+/* Taxonomia da espécie */
+#taxonomy {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 150px 122px;
+    position: relative;
+    z-index: 1;
+}
+
+#section_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+#section_header h2 {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.section_divider_bar {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+#specie_taxonomy {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 28px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+#specie_taxonomy tbody {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid #001B58;
+    border-radius: 12px;
+}
+
+#specie_taxonomy tr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Ajusta as cores das linhas da tabela */
+
+#specie_taxonomy tbody tr:nth-child(odd) td:first-child {
+    width: 100%;
+    background-color: rgba(1, 27, 86, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#specie_taxonomy tbody tr:nth-child(odd) td:last-child {
+    width: 100%;
+    background-color: rgba(1, 27, 86, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#specie_taxonomy tbody tr:nth-child(even) td:first-child {
+    width: 100%;
+    background-color: rgba(4, 17, 47, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#specie_taxonomy tbody tr:nth-child(even) td:last-child {
+    width: 100%;
+    background-color: rgba(4, 17, 47, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#specie_taxonomy td {
+    width: 50%;
+    height: 90px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#specie_taxonomy tbody tr:hover {
+    background-color: rgba(0, 27, 88, 1);
+    cursor: pointer;
+}
+
+/* Ajusta as fontes de cada coluna. */
+#specie_taxonomy tbody tr td:first-child {
+    font-size: 0.80rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#specie_taxonomy tbody tr td:last-child {
+    font-size: 0.80rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ajusta o Radius de cada coluna. */
+#specie_taxonomy tbody tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+}
+
+#specie_taxonomy tbody tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+}
+
+#specie_taxonomy tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+#specie_taxonomy tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+/* Habitat e distribuição */
+#habitat {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 150px 122px;
+    position: relative;
+    z-index: 1;
+    gap: 40px;
+}
+
+.section_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.informations_cards {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.information_container {
+    width: 620px;
+    height: 350px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #00123C;
+    border: 1px solid #001B58;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.information_header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information_header h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.information_header p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 400;
+    background-color: rgba(255, 119, 0, 0.2);
+    border: 1px solid rgba(255, 119, 0, 0.4);
+    border-radius: 50px;
+    padding: 7px 12px;
+    color: #FF7700;
+}
+
+/*Alimentação e reprodução*/
+
+#alimentation_reproduction {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 150px 122px;
+    position: relative;
+    z-index: 1;
+    gap: 40px;
+}
+
+#information_table {
+    width: 620px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 28px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+#information_table tbody {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid #001B58;
+    border-radius: 12px;
+}
+
+#information_table tr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Ajusta as cores das linhas da tabela */
+
+#information_table tbody tr:nth-child(odd) td:first-child {
+    width: 100%;
+    background-color: rgba(1, 27, 86, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#information_table tbody tr:nth-child(odd) td:last-child {
+    width: 100%;
+    background-color: rgba(1, 27, 86, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#information_table tbody tr:nth-child(even) td:first-child {
+    width: 100%;
+    background-color: rgba(4, 17, 47, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#information_table tbody tr:nth-child(even) td:last-child {
+    width: 100%;
+    background-color: rgba(4, 17, 47, 0.16);
+    border: 1px solid rgba(0, 27, 88, 0.2);
+}
+
+#information_table td {
+    width: 50%;
+    height: 58px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#information_table tbody tr:hover {
+    background-color: rgba(0, 27, 88, 1);
+    cursor: pointer;
+}
+
+/* Ajusta as fontes de cada coluna. */
+#information_table tbody tr td:first-child {
+    font-size: 0.80rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#information_table tbody tr td:last-child {
+    font-size: 0.80rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Ajusta o Radius de cada coluna. */
+#information_table tbody tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+}
+
+#information_table tbody tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+}
+
+#information_table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+#information_table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+/*Curiosidades*/
+#curiosities {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 31px 122px;
+    gap: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.curiosity_container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    background-color: #00123C;
+    border: 1px solid #001B58;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.curiosity_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curiosity_number {
+    font-size: 12rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: rgba(0, 17, 56, 1);
+}
+
+.curiosity_content {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curiosity_content h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.curiosity_content p {
+    font-size: 1.30rem;
+    font-weight: 200;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.update img {
+    width: 20px;
+}
+
+.update p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.update .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action_button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+}
+
+/*Galary*/
+#galary {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 31px 122px;
+    gap: 28px;
+    position: relative;
+    z-index: 1;
+    
+    overflow: hidden;
+}
+
+#gallery_images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+#gallery_images img {
+    width: 578px;
+    height: 433px;
+    object-fit: cover;
+    border-radius: 12px;
+}
