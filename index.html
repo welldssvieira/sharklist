@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/card.css">
+
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/body.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/catalogo.css">
 
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/global.css">
+    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/card.css">
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/layouts/hero.css">
+    <link rel="stylesheet" href="assets/css/layouts/catalogo.css">
+    <link rel="stylesheet" href="assets/css/responsive/mobile.css">
+    <link rel="stylesheet" href="assets/css/responsive/tablet.css">
+    <link rel="stylesheet" href="assets/css/responsive/desktop.css">
+
     <title>Shark List</title>
 </head>
 
@@ -25,23 +29,47 @@
         <header id="header_main">
 
             <a href="#" target="_self" class="header_logo" title="Clique para voltar à página inicial">
-                <img src="assets/logo/Logo-SharkList.svg" alt="Logomarca SharkList">
+                <img src="assets/logos/Logo-SharkList.svg" alt="Logomarca SharkList">
             </a>
 
             <div class="header_networks">
 
                 <a href=" #" target="_blank" class="rede" title="Clique para acessar o Instagram do SharkList">
-                    <img src="assets/icones/icone-instagram.svg" alt="Icone do Instagram">
+                    <img src="assets/icons/icone-instagram.svg" alt="Icone do Instagram">
                 </a>
 
             </div>
 
         </header>
+        <!--
+        Sharklist Hero Video Credit
 
+        Title: Great white shark as seen from a cage.webm
+        Species: Great white shark (Carcharodon carcharias)
+
+        Author: Gremly Media
+        Source: Wikimedia Commons
+        Original source: https://vimeo.com/142742333
+
+        License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+        License URL: https://creativecommons.org/licenses/by/3.0/
+
+        Modification:
+        Video trimmed in length and audio removed from original material.
+
+        Accessed from Wikimedia Commons:
+        https://commons.wikimedia.org/wiki/File:Great_white_shark_as_seen_from_a_cage.webm
+        -->
+
+        <video autoplay muted loop id="hero_video">
+            <source src="assets/videos/Great_white_shark_as_seen_from_a_cage-Desktop.mkv" type="video/mp4">
+        </video>
         <section id="hero_main">
+
             <div class="hero_content">
                 <span data-aos="fade-up" data-aos-duration="2000" class="hero_observation">PROJETO INDEPENDENTE</span>
-                <h1 data-aos="fade-up" data-aos-duration="2000" class="hero_title">O maior catálogo <br> de <span id="test">tubarões</span> do
+                <h1 data-aos="fade-up" data-aos-duration="2000" class="hero_title">O maior catálogo <br> de <span
+                        id="test">tubarões</span> do
                     mundo.</h1>
                 <hr data-aos="fade-up" data-aos-duration="2000" class="hero_divider">
                 <p data-aos="fade-up" data-aos-duration="2000" class="hero_description">Explore mais de 530 espécies de
@@ -50,7 +78,8 @@
             </div>
         </section>
 
-        <dotlottie-wc class="drop_mouse" src="https://lottie.host/31cf549e-b153-4277-9eb0-b37e663154bb/MlNU8ozpiy.lottie" speed="0.5"
+        <dotlottie-wc class="drop_mouse"
+            src="https://lottie.host/31cf549e-b153-4277-9eb0-b37e663154bb/MlNU8ozpiy.lottie" speed="0.5"
             style="width: 80px;height: 80px;" autoplay loop></dotlottie-wc>
     </main>
 
@@ -60,7 +89,7 @@
     <footer id="footer_main">
         <div class="footer_first">
             <a href="#" target="_self" class="header_logo" title="Clique para voltar à página inicial">
-                <img src="assets/logo/Logo-SharkList.svg" alt="Logomarca SharkList">
+                <img src="assets/logos/Logo-SharkList.svg" alt="Logomarca SharkList">
             </a>
 
             <p>Construindo o maior catálogo digital de tubarões do mundo <br> para inspirar conhecimento, conservação e
@@ -68,12 +97,12 @@
 
             <div class="footer_networks">
                 <a target="_blank" class="rede" title="Clique para acessar o Instagram do SharkList">
-                    <img src="assets/icones/icone-instagram2.svg" alt="Icone do Instagram">
+                    <img src="assets/icons/icone-instagram2.svg" alt="Icone do Instagram">
                 </a>
 
                 <a href="https://github.com/welldssvieira/sharklist" target="_blank" class="rede"
                     title="Clique para acessar o Github do SharkList">
-                    <img src="assets/icones/icone-github.svg" alt="Icone do Github">
+                    <img src="assets/icons/icone-github.svg" alt="Icone do Github">
                 </a>
             </div>
         </div>
@@ -96,27 +125,10 @@
         </div>
     </footer>
 </body>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script>
 
-<script type="module" src="assets/js/getEspecies.js"></script>
-
-<script>
-    AOS.init({
-        once: true, // apenas uma vez
-        mirror: false // não repete ao voltar subindo
-    });
-
-
-    const header = document.getElementById("header_main");
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
-</script>
+<script type="module" src="assets/js/main.js"></script>
 
 </html>
