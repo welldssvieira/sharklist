@@ -16,7 +16,7 @@
     }
 
     #main_content {
-        background: url('../images/backgrounds/hero-banner-Mobile.jpg');
+        background: url('../../images/backgrounds/hero-banner-Mobile.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
