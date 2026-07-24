@@ -5,7 +5,7 @@ function getEspecies() {
 if (!containerCatalogo) return;
 
     const cardsHTML = especies.map(especie => `
-        <a href="pages/species/carcharodon_carcharias.html" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" target="_self" class="catalogo_card">
+        <a href="pages/species/species.html" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" target="_self" class="catalogo_card">
             <header class="card_header">
                 <div class="card_header_title">
                     <h3>${especie.name}</h3>
@@ -19,7 +19,7 @@ if (!containerCatalogo) return;
             </header>
 
             <img loading="lazy" class="card_image"
-                src="${especie.image}"
+                src="${especie.imageCard}"
                 alt="Imagem do ${especie.name}">
         </a>
     `);
